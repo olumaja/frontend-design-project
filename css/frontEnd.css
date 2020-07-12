@@ -275,10 +275,10 @@ header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
         border-radius: 15px; margin: 0 auto;
     }
     .about-grid{
-         flex: 100%; max-width: 100%; display: flex; 
-         height: 320px; margin: 0 auto;
+         flex: 100%; max-width: 100%; display: flex;
+         height: 300px; margin: 0 auto; position: relative;
     }
-    /* .about-text{grid-area: textAreas;} */
+    
     .aboutBlack{
         width: 70%; height: 250px; background-color: #000000; border-radius: 20px;
          position: relative; padding-top:100px; padding-left: 200px;
@@ -310,21 +310,91 @@ header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
     }
     .about{flex: 35%; display: flex;}
     .socialAbout{
-        flex: 70%; padding-top: 60px; font-size: 20px; 
+        flex: 70%; padding-top: 50px; font-size: 20px; 
         font-weight: bolder; color: #000000; position: relative;
     }
     .socialAbout::before{
-        content: "About"; position: absolute; right: 90px; top: 20px;
-        font-size: 80px; font-weight: bolder; color: #cccccc; opacity: 0.3;
+        content: "About"; position: absolute; right: 90px; top: 10px;
+        font-size: 80px; font-weight: bolder; color: #c1c1c1; opacity: 0.3;
     }
 
     .about .social{
         flex: 30%; font-size: 30px; padding-top: 16px;
         line-height: 50px;
     }
-
     .about-text{flex: 100%; max-width: 100%; line-height: 40px;}
     
+    .container.userExperience{transform: translateY(-80px);}
+    .experience{
+        height: 550px; width: 100%; padding: 80px 20px; 
+        box-shadow: 0 60px 30px 0 rgba(0, 0, 0, 0.1), 0 60px 30px 0 rgba(0, 0, 0, 0.1); 
+        background-color: #ffffff; border-radius: 15px; margin: 0 auto;
+    }
+    .experience .course{
+        margin: 0 auto; font-size: 30px; font-weight: bolder;
+         position: relative; width: 30%;
+        }
+    .experience .course::before{
+        content: "Experience";
+        position: absolute; left: -130px; top: -42px;
+        font-size: 80px; font-weight: bolder; color: #c1c1c1; opacity: 0.3;
+    }
+
+    .attendMenu{
+        width: 70%; margin: 60px auto; text-align: center; 
+        height: 50px; display: flex; overflow: hidden;
+        border-radius: 15px; border: #000000 thin solid;
+    }
+    #after{padding-left: 20px; height: 50px; width: 33.3%; padding-top: 14px;}
+    #during{
+            border-left: #000000 thin solid; border-right: #000000 thin solid;
+            height: 50px; width: 33%; padding-top: 14px;
+        }
+    #before{padding-right: 20px; height: 50px; width: 33.6%; 
+        background-color: #000000; padding-top: 14px; color: #ffffff;
+    }
+    .courseText{display: flex; width: 70%; margin: 0 auto;}
+    .courseImg{width: 30%;}
+    .courseImg img{width: 200px; height: 200px;}
+    .textCourse{width: 70%; line-height: 27px;}
+
+    
+    .sessions{width: 100%; padding-top: 70px;}
+    .sessionHeader{
+        width: 60%; margin-left: auto; margin-right: auto;
+        text-align: center; font-size: 30px; position: relative; margin-bottom: 150px;
+    }
+    .sessionHeader::before{
+        content: "Sessions";
+        position: absolute; left: 160px; top: -32px;
+        font-size: 80px; font-weight: bolder; color: #c1c1c1; opacity: 0.3;
+    }
+    .sessionBorder{border-left: rgba(193, 193, 193, 0.2) solid 2px;}
+    .personalSession{width: 100%; margin-top: 40px;}
+    .personalSession .sessionHead{
+        background-color: #cccccc; width: 97%; margin: 0 auto; display: flex;
+        height: 30px; font-size: 18px; padding-top: 5px; border-radius: 5px; position: relative;
+    }
+    .sessionHead::before{
+        content: ""; height: 28px; width: 3px;
+         position: absolute; left: -18px; top: 1px;
+        background-color:#000000;
+    }
+    .sessionHead .firstSession{width: 30%; padding-left: 90px;}
+    .sessionHead .duration{
+        display: flex; width: 70%; justify-content: space-between; padding-left: 20px;  
+        padding-right: 150px;
+    }
+    .sessionBody{
+        display: flex; width: 98%; margin-left: auto; margin-right: auto;
+         margin-top: 20px; padding: 0 20px;
+        }
+    .sessionBody .userPerson{width: 30%; padding-left: 60px; padding-top: 10px;}
+    .sessionBody .userbody{
+        width: 70%; line-height: 30px; padding-left: 7px; padding-right: 20px;
+    }
+
+
     
 }
 
@@ -332,7 +402,7 @@ header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
     .container{max-width: 900px;}
     
     .nav-menu{
-        width: 90%; height: 30px; color: #ffffff; display: flex;
+        width: 90%; height: 30px; color: #201f1f; display: flex;
         justify-content: space-between; align-items: center; font-size: 16px; 
         margin-left: 40px;
     }
@@ -345,6 +415,15 @@ header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
     .productImg img{width: 90%; height: auto;}
     .productContent .factory{transform: translate(80px,-80px);}
     .product{width: 100%;}
+
+    .container.aboutUs{
+        transform: translateY(-200px);
+        }
+        .about-grid{height: 200px;}
+        .cardDiv{
+             transform: translateY(-150px);
+        }
+
 }
 
 @media (min-width: 992px){
@@ -355,6 +434,8 @@ header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
     }
     .productImg img{width: 80%; height: auto;}
     .productContent .factory{transform: translate(85px,-85px);}
+
+    
 }
 @media (min-width: 1200px){
     .container{max-width: 1140px;}
@@ -363,4 +444,5 @@ header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
         justify-content: space-between; align-items: center; font-size: 16px;
     }
     .productContent .factory{transform: translate(120px,-85px);}
+
 }
