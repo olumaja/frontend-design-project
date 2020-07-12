@@ -359,7 +359,7 @@ header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
     .textCourse{width: 70%; line-height: 27px;}
 
     
-    .sessions{width: 100%; padding-top: 70px;}
+    .sessions{width: 100%; padding-top: 70px; padding-bottom: 80px;}
     .sessionHeader{
         width: 60%; margin-left: auto; margin-right: auto;
         text-align: center; font-size: 30px; position: relative; margin-bottom: 150px;
@@ -394,8 +394,37 @@ header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
         width: 70%; line-height: 30px; padding-left: 7px; padding-right: 20px;
     }
 
+    .container.tutor{
+        margin-top: 40px; width: 100%; border-radius: 10px; margin-bottom: 20px;
+        box-shadow: 0 60px 30px 0 rgba(0, 0, 0, 0.1), 0 60px 30px 0 rgba(0, 0, 0, 0.1);
+    }
+    .masterHead{
+        width: 60%; margin-left: auto; margin-right: auto;
+        text-align: center; font-size: 30px; position: relative; margin-bottom: 150px;
+    }
+    .masterHead::before{
+        content: "Masters"; font-size: 80px; font-weight: bolder; color: #c2c1c1; 
+        opacity: 0.3; position: absolute; left: 175px; top: -33px;
+    }
 
-    
+    .masters{
+            display: flex; flex-wrap: wrap; width: 100%; padding: 0 20px 60px 20px;
+            justify-content: space-between;
+        }
+        .holder{flex: 20%; max-width: 20%; padding: 30px}
+        .holder img{max-width: 100%; height: auto;}
+        figcaption span{font-size: 12px;}
+    /* .masterPicture1{
+        flex: 60%; max-width: 60%; display: flex; background-color: aqua; 
+        justify-content: space-between; 
+    }
+    .masterPicture2{
+        flex: 40%; max-width: 40%; display: flex; background-color: green; 
+        justify-content: space-between;
+    }
+    .imgholder figure img{width: 100%; height: auto;} */
+
+
 }
 
 @media (min-width: 935px){
