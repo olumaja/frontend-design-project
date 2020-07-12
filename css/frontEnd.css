@@ -17,7 +17,7 @@ body{
 .logo{max-width: 10%;}
 
 .container.content{
-    transform: translateY(-400px); margin: 0 auto; 
+    transform: translateY(-400px); margin: 0 auto;
      
 }
 .product{
@@ -26,7 +26,6 @@ body{
 }
 .productContent{
     width: 100%; padding-left: 10px; padding-top: 70px; padding-bottom: 70px; margin: 0 auto;
-    background-color: seagreen;
     }
 header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
 .productContent .ui{
@@ -106,8 +105,7 @@ header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
     }
     .productContent .learn{width: 80%; margin: 0 auto;}
     .productContent .learn span{font-size: 18px; color: #333; line-height: 2.0;}
-    /* .productImg{width:50%; padding-left: 70px; padding-top: 100px;}
-    .productImg img{width: 80%; height: auto;} */
+    
     .productImg{display: none;}
     .startButton button{
         width: 50%; background-color: #f46632; height: 50px; margin-top: 30px; margin-left: 80px;
@@ -245,7 +243,6 @@ header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
         width: 90%; height: 30px; color: #ffffff; display: flex; font-size: 16px;
         justify-content: space-between; align-items: center; margin-left: 10px;
     }
-
     .logo{width: 10%;}
 
     .nav-menu-item .btn{
@@ -258,7 +255,7 @@ header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
     .nav-menu .nav-menu-item.hamburger{display: none;}
 
     .product{
-        padding: 20px 0px; height: 600px;
+        padding: 20px 0px; height: 600px; width: 100%;
     }
     header h1{font-size: 25px; margin-bottom: 10px;}
     .productImg{width: 55%; padding-left: 40px; padding-top: 70px; display: block;}
@@ -269,10 +266,65 @@ header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
     .productContent .factory{font-size: 20px; transform: translate(28px,-85px);}
     .startButton button{font-size: 16px;}
 
-    .about{
-        height: 600px; width: 96%; padding: 0 10px; box-shadow: 0 60px 30px rgba(0, 0, 0, 0.1);
-        display: flex; background-color: #fff; border-radius: 15px; margin: 0 auto;
+    .container.aboutUs{
+        transform: translateY(-250px); margin: 0 auto;
+        }
+    .aboutFlex{
+        display: flex; flex-wrap: wrap; height: 520px; width: 100%; padding: 20px; 
+        box-shadow: 0 60px 30px rgba(0, 0, 0, 0.1); background-color: #ffffff; 
+        border-radius: 15px; margin: 0 auto;
     }
+    .about-grid{
+         flex: 100%; max-width: 100%; display: flex; 
+         height: 320px; margin: 0 auto;
+    }
+    /* .about-text{grid-area: textAreas;} */
+    .aboutBlack{
+        width: 70%; height: 250px; background-color: #000000; border-radius: 20px;
+         position: relative; padding-top:100px; padding-left: 200px;
+    }
+    .aboutBlack .playbutton{
+        width: 20px; height: 20px; cursor: pointer;
+        position: absolute; top: 210px; left: 420px;
+    }
+    .cardDiv{position: relative; flex: 65%; padding-left: 40px;}
+    .cardDiv .blackLine{
+        width: 30px; height: 1px; background-color: #000000; 
+        position: absolute; left:499px; top: 180px;
+    }
+    .cardDiv .blackSquare{
+        width: 20px; height: 20px; background-color: #000000; padding-left: 5px;
+        position: absolute; left: 529px; top: 170px; padding-top: 5px;
+    }
+    .cardDiv .blackSquare .whiteCircle{
+        width: 10px; height: 10px; border-radius: 50%; 
+        background-color: #ffffff;
+    }
+    .cardDiv .blackCircle1{
+        width: 180px; height: 150px; border-radius: 50%; margin-left: 130px;
+        background-color: transparent; border: #000 thin solid; position: absolute; top: 150px
+    }
+    .cardDiv .blackCircle2{
+        width: 80px; height: 100px; border-radius: 50%; margin-left: 100px;
+        background-color: transparent; border: #000 thin solid; position: absolute; top: 190px
+    }
+    .about{flex: 35%; display: flex;}
+    .socialAbout{
+        flex: 70%; padding-top: 60px; font-size: 20px; 
+        font-weight: bolder; color: #000000; position: relative;
+    }
+    .socialAbout::before{
+        content: "About"; position: absolute; right: 90px; top: 20px;
+        font-size: 80px; font-weight: bolder; color: #cccccc; opacity: 0.3;
+    }
+
+    .about .social{
+        flex: 30%; font-size: 30px; padding-top: 16px;
+        line-height: 50px;
+    }
+
+    .about-text{flex: 100%; max-width: 100%; line-height: 40px;}
+    
     
 }
 
@@ -287,14 +339,12 @@ header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
     .logo img{width: 100%; height: auto}
     
     .nav-menu-item .btn{margin-left: 70px; width: 150px;}
-    
-    /* .productImg{width: 50%; padding-left: 70px;}
-    .productImg img{width: 90%; height: auto;} */
     .productContent{width: 50%; padding-left: 40px;}
     .productContent .learn{width: 90%;}
     .productImg{width:50%; padding-left: 50px; padding-top: 60px;}
     .productImg img{width: 90%; height: auto;}
-    .productContent .factory{transform: translate(60px,-80px);}
+    .productContent .factory{transform: translate(80px,-80px);}
+    .product{width: 100%;}
 }
 
 @media (min-width: 992px){
