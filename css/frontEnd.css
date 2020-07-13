@@ -473,9 +473,44 @@ header h1{font-size: 30px; margin-bottom: 20px; text-align: center;}
             font-size: 18px; color: #ffffff; border-radius: 10px; border: hidden;
         }
         .moneyBack{
-             width: 60%; text-align: center; margin: 0 auto; padding-bottom: 40px;
-             padding-top: 40px; font-size: 14px; color: #666666; opacity: 0.8;
-            }
+                width: 60%; text-align: center; margin: 0 auto; padding-bottom: 40px;
+                padding-top: 40px; font-size: 14px; color: #666666; opacity: 0.8;
+        }
+
+        .requested{
+            width: 100%; background-color: #000000; margin-top: 70px; 
+            margin-bottom: 70px;
+        }
+        .requested .bigEvenlop{
+             width: 100%; background: url('../image/bigEvenlo.png') no-repeat 87% 0;
+            padding-top: 50px;  padding-bottom: 30px;
+        }
+        .container.evenlop{display: flex;}
+        .evenlopMessage{flex: 80%; max-width: 80%;}
+        .evenlopMessage .evenlopHead{width: 66%; color: #ffffff;}
+        .evenlopHead .lists{font-size: 26px; font-weight: bold; margin-bottom: 20px;}
+        .evenlopHead .topics{
+            line-height: 30px; font-size: 16px; margin-bottom: 20px; width: 84%;
+        }
+        .evenlopHead .emailbox{
+            width: 420px; height: 30px; background-color: #333333; font-size: 14px; 
+            border-radius: 5px; padding-top: 7px; padding-left: 25px; margin-bottom: 20px;
+        }
+        .evenlopHead .successful{font-size: 15px; margin-bottom: 20px; height: 20px; 
+            background: url('../image/checkMark1.png') no-repeat left center; padding-left: 25px;
+        }
+        .smallEvenlop{flex: 20%; max-width: 20%; padding-top: 70px; padding-left: 70px;}
+        .smallEvenlop img{width: 200px; height: 100px;}
+        
+        .container.project{margin-top: 100px;}
+        .projectHead{
+            width: 60%; margin-left: auto; margin-right: auto;
+            text-align: center; font-size: 30px; position: relative; margin-bottom: 150px;
+        }
+        .projectHead::before{
+            content: "Projects"; font-size: 80px; font-weight: bolder; color: #c2c1c1; 
+            opacity: 0.3; position: absolute; left: 163px; top: -35px;
+        }
 
 }
 
